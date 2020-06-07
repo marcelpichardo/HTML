@@ -1,0 +1,22 @@
+*{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.titulorojo{
+    color: red;
+    font-size: 4.em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#parrafo
+{
+    color: black;
+    font-size: 5.em;
+
+}
+p,label{
+    opacity: 0.7;
+
+
+}
