@@ -1,6 +1,11 @@
+/*Con el * se marca para que todo tenga estos atributos definidos aqui*/
 *{
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+    
+    
 
 }
 
@@ -15,8 +20,10 @@
     font-size: 5.em;
 
 }
+/*Con esto puedes asignar un estilo especificos alas etiquetas que selecciones, en este caso los parrafos P y los Label como ejemplo */
 p,label{
     opacity: 0.7;
 
 
 }
+
