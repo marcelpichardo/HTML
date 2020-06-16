@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+
+}
+main{
+    background-image: url(img/bgcontact.jpg);
+    background-position: 50% 50%;
+    height: 100vh;
+}
+.fondo{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+ 
+}
+.titulo{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedorformulario{
+    border-radius: 15px;
+    position: relative;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    background-color:rgb(255, 255, 255);
+    padding: 30px;
+    top: 10%;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+}  
+
+.tituloprincipal{
+    color: red;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.contenido{
+    width: 100%;
+
+}
+.contenido > article {
+    display: inline-block;
+}
+.info{
+    width: 34%;
+    padding: 5px;
+    font-size: small;
+    color: rgb(148, 148, 148);
+}
+.info i{
+    font-size: 25px;
+    
+
+}
+.formulario{
+    width: 65%;
+}
+form > * {
+    display: block;
+}
+.caja-texto{
+    width: 100%;
+    padding: 5px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    background: 40%;
+    border: red solid 1px;
+}
+.boton {
+    border-radius: 4px;
+    background-color: #fd0000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    float: right;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.boton:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid #ff0000;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ i{
+     color: red;
+
+     width: 20px;
+ }
+ textarea::placeholder{
+     color:red;
+     font-family: "Roboto", sans-serif;
+ }
+ input::placeholder{
+     color: red;
+     font-family: "Roboto", sans-serif;
+ }
+ 
+
