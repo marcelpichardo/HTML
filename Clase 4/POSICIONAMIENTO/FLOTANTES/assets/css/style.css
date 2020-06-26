@@ -1,0 +1,86 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+:root{
+    --verde: #00916E;
+    --gris: #FEEFE5;
+    --amarillo: #FFCF00;
+    --naranja: #EE6123;
+    --rosa: #FA003F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color:#FEEFE5;
+}
+body{
+    background-color: #FEEFE0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h2{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1vh;
+    color:#FEEFE5;
+    color: #084887;
+
+}
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 100px;
+    grid-template-areas:"header header header"
+                        "menu contenido toolbar"
+                        "menu footer footer";
+                    
+    grid-gap: 10px;
+    height: 92vh;
+}
+.contenedor > * {
+    background-color: #084887;
+    border-radius: 5px;
+    padding: 10px;
+
+
+}
+.cabecera{
+    background-color: #FFCF00;
+    color: #FEEFE5;
+    grid-area: header;
+
+}
+.cabecera, .pie-pagina {
+    width: inherit;
+
+}
+.seccion, .barra-tarea{
+    width: 32%;
+    min-height: 400px;
+
+
+}
+.pie-pagina{
+    text-align: center;
+    background-color: #084887;
+    color: #FEEFE5;
+    min-height: 40px;
+    grid-area: footer;
+}
+/* extra small devices (pgones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+
+    .seccion, .barra-tarea {
+        width: 100%;
+        min-height: 200px;
+        float: left;
+    }
+    .barra-tarea {
+        float: left;
+        min-height: 100px;
+    }
+    .pie-pagina{
+        display: none;
+    }
+}
