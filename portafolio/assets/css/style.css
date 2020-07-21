@@ -90,9 +90,10 @@ i{
   height: 50%;
 }
 .contenedor{
-  width: 60%;
+  width: 80%;
   height: 600px;
   display: grid;
+  margin: auto;
   grid-template-columns: 200px;
   grid-template-rows: 30px;
   grid-template-areas:
@@ -125,7 +126,7 @@ i{
 }
 .top{
   background-color: #ff312e;
-  height: 10vh;
+  height: 15vh;
   padding-top: 3px;
   padding-bottom: 15px;
 }
@@ -143,12 +144,47 @@ i{
 .menu{
   grid-area: menu;
   display: flex;
+  position: relative;
   flex-flow:row nowrap ;
   background-color: #ff312e ;
   width: 100%;
   height: 50px;
   justify-content: flex-end;
   align-items: center;
+}
+.menu:after{
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 50px;
+  left: calc(3% - 21px);
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  border-top: 14px solid #ff312e;
+}
+.menu:before{
+  content: "";
+  display: block;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  left: calc(3% - 21px);
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  border-top: 14px solid #ffffff;
+
+
+}
+.vl {
+  border-left: 2px solid  #ff312e;
+  height: 200px;
+  position: absolute;
+  left: 10%;
+  margin-left: 18.5%;
+  top: 230px;
 }
 .text1{
   font-size: 20pt;
