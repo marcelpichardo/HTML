@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* width 
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(239,118,122,.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EF767A;
+}
+ */
+.ocultar {
+    /*opacity: 0;*/
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.main-color {
+    color: #ff0008;
+}
+
+.completado-color {
+    color: #49DCB1;
+}
+.completado-bg-color {
+    background-color: #49DCB1;
+}
+
+.completado-bg-color:hover {
+    background-color: #49BEAA;
+}
+
+.main-bg-color {
+    background-color: gainsboro !important;
+
+}
+
+.shadow {
+    box-shadow: rgba(22,22,22,.5) 0 3px 3px;
+}
+
+.scroll {
+    overflow: auto;
+}
+
+.bg-1 {
+    background-image: url(../image/bg.jpg);
+    height: 50vh;
+}
+.lista-tareas {
+    position: absolute;
+    width: 60%;
+    margin: auto;
+    top: 10vh;
+    left: 20%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(22,22,22,.5) 0 3px 3px;
+}
+
+.lista-tareas-titulo > h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lista-tareas-contenido {
+    height: 50vh;
+}
+
+.sin-tareas {
+    width: 70%;
+    height: 350px;
+    background-image: url("../image/bgchef.jpg");
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tarea-contenedor {
+    display: grid;
+    grid-template-areas: "titulo buton" "descripcion descripcion";
+    grid-template-columns: 2fr 0.5fr;
+}
+
+.tarea-titulo {
+
+}
+
+.tarea-boton {
+    text-align: right;
+}
