@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Agregar nueva tarea</title>
+    <link rel="icon" href="assets/image/icon.ico">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -17,7 +18,7 @@
             <article class="lista-tareas-titulo">
                 <h3 class="main-color py-4">
                     <i class="fa fa-plus-square"></i>
-                    Agregar tarea
+                    Agregar nueva tarea
                 </h3>
             </article>
             <article class="lista-tareas-contenido px-4">
@@ -31,6 +32,13 @@
                         <div class="invalid-feedback">
                             Este campo es requido
                         </div>
+                    </div>
+                    <div>
+                        <select class="form-control" id="tipo">
+                            <option value="default">Seleccionar Tipo</option>
+                            <option value="delivery">DELIVERY</option>
+                            <option value="takeout">TAKEOUT</option>
+                          </select>
                     </div>
                     <div class="form-group">
                         <label for="descripcion">Desripcion</label>
@@ -47,12 +55,11 @@
             <article class="lista-tareas-botones">
                 <div class="container-fluid">
                     <div class="row py-4">
-                        <div class="col-12 col-md-8 pl-4">
-                            <a href="index.html" class="btn btn-light shadow mr-3">Cancelar</a>
-                        </div>
-                        <div class="col-12 col-md-4 pr-4 text-right">
+                        <div class="col-12 d-flex justify-content-between">
+                            <a href="index.html" class="btn btn-danger shadow mr-3">CANCELAR</a>
+                            <a href="index.html" class="btn btn-danger shadow mr-3">REGRESAR</a>
                             <button id="btn-guardar" type="button"
-                                    class="btn btn-light shadow main-bg-color text-white">Guardar
+                                    class="btn btn-warning shadow text-white">PROCESAR
                             </button>
                         </div>
                     </div>

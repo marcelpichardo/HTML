@@ -13,6 +13,9 @@ $(document).ready((e) => {
     $('#btn-guardar').click(function (e) {
         let titulo = $("#titulo");
         let descripcion = $("#descripcion");
+        let tipo = $("#tipo");
+    
+
         //titulo.val() // con este metodo de jquery podemos acceder al valor del input
 
         if (!titulo.val()) {
@@ -33,15 +36,19 @@ $(document).ready((e) => {
 
 
         let tarea = {
+            id: tareas.length + 1,
             titulo: titulo.val(),
             descripcion: descripcion.val(),
-            estado: true,
+            tipo: tipo.val(),
+            estado: false,
             fecha: new Date()
         };
 
         modulo.setTareasEnStorage(tarea);
+        tareas = modulo.getTareasEnStorage();
         titulo.val("");
         descripcion.val("");
+        tipo.val("");
         titulo.removeClass('is-valid');
         descripcion.removeClass('is-valid');
     });

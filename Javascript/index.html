@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Listado de pedidos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/image/icon.ico">
+    <title>JOSE FASTFOOD - APP PEDIDOS</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -12,38 +14,39 @@
 <main class="container-fluid">
     <div class="row">
         <section class="col-12 bg-1"></section>
-        <section class="col-12 bg-2"></section>
-        <section class="lista-tareas shadow">
-            <article class="lista-tareas-titulo">
-                <h3 class="main-color py-4">
-                    <i class="fa fa-check-circle-o"></i>
-                    Listado de pedidos
-                </h3>
-            </article>
-            <article class="lista-tareas-contenido px-4 scroll">
-                <div class="sin-tareas d-flex justify-content-center align-items-end">
-                    <p class="text-center text-muted">
-                        No tenemos ningun pedidos.
-                    </p>
-                </div>
-
-<!--                Agregar tareas en esta area-->
-
-            </article>
-            <article class="lista-tareas-botones">
-                <div class="container-fluid">
-                    <div class="row py-4">
-                        <div class="col-12 col-md-8 pl-4">
-                            <button id="btn-todo" type="button" class="btn btn-light shadow mr-3">Todos</button>
-                            <button id="btn-completada" type="button" class="btn btn-light shadow mr-3">Entregados</button>
-                            <button type="button" class="btn btn-light shadow mr-3">En Proceso</button>
-                        </div>
-                        <div class="col-12 col-md-4 pr-4 text-right">
-                            <a href="formulario_tarea.html" class="btn btn-light shadow main-bg-color">Nuevo Pedido</a>
-                        </div>
+            <div class="contenido">
+                <section class="col-12 bg-2"></section>
+                    <section class="lista-tareas shadow-1">
+                        <article class="lista-tareas-titulo">
+                            <h3 class="main-color py-4">
+                                <i class="fa fa-cutlery"></i>
+                                JOSE FAST FOOD - 809 583 1515
+                            </h3>
+                        </article>
+                        <article class="lista-tareas-contenido px-4 scroll">
+                            <div class="sin-tareas d-flex justify-content-center align-items-end">
+                                <p class="text-center text-muted">
+                                    No tenemos ningun pedido.
+                                    
+                                </p>
+                            </div>
+                        </article>
+                        <article class="lista-tareas-botones">
+                            <div class="container-fluid">
+                                <div class="row py-4 justify-content-md-between">
+                                    <div class="col-12 col-md-3 d-flex justify-content-between" id="filtros">
+                                        <button id="btn-todo" type="button" class="btn btn-danger shadow-1">TODOS</button> &nbsp;
+                                        <button id="btn-completada" type="button" class="btn btn-danger shadow-1">ENTREGADO</button> &nbsp;
+                                        <button id="btn-incompleta" type="button" class="btn btn-danger shadow-1">PENDIENTE</button> &nbsp;
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <a href="formulario_tarea.html" class="btn btn-warning shadow-1 text-white btn-block movil-mt-2">NUEVO PEDIDO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                </div>
-            </article>
+                </section>
         </section>
     </div>
 </main>

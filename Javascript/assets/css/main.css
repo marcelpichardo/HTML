@@ -5,23 +5,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* width 
+/* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
+/* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(239,118,122,.8);
+    background: rgba(239, 118, 122, .8);
 }
 
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #EF767A;
 }
- */
+
 .ocultar {
     /*opacity: 0;*/
     display: none !important;
@@ -29,47 +32,70 @@ body {
     height: 0 !important;
 }
 
-.main-color {
+.main-color{
+    color: #ff0008;
+
+}   
+p{
     color: #ff0008;
 }
 
+hr{
+    border-top: 1px dashed red;
+}
+b{
+    color: gray;
+}
+
 .completado-color {
-    color: #49DCB1;
-}
-.completado-bg-color {
-    background-color: #49DCB1;
-}
-
-.completado-bg-color:hover {
-    background-color: #49BEAA;
-}
-
-.main-bg-color {
-    background-color: gainsboro !important;
+    color: #019415;
 
 }
+a.completado-color:hover {
+    color: #04c91e;
+}
 
+button.completado-bg-color:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25) !important;
+}
 .shadow {
-    box-shadow: rgba(22,22,22,.5) 0 3px 3px;
+    box-shadow: rgba(22, 22, 22, .5) 0 3px 3px;
 }
+
+.shadow-4 {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+    0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15),
+    0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.shadow-1 {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
 
 .scroll {
     overflow: auto;
 }
 
 .bg-1 {
-    background-image: url(../image/bg.jpg);
-    height: 50vh;
+    background-image: url("../image/fruits.jpg");
+    display: grid;
+    width: 500px;
+    height: 100vh;
+
+
 }
+
 .lista-tareas {
     position: absolute;
-    width: 60%;
-    margin: auto;
-    top: 10vh;
-    left: 20%;
+    width: 70%;
+    top: 5vh;
+    left: 15%;
     background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: rgba(22,22,22,.5) 0 3px 3px;
+    border-radius: 11px;
+    box-shadow: rgba(22, 22, 22, .5) 0 3px 3px;
 }
 
 .lista-tareas-titulo > h3 {
@@ -78,16 +104,27 @@ body {
 }
 
 .lista-tareas-contenido {
-    height: 50vh;
+    height: 70vh;
 }
 
+
 .sin-tareas {
-    width: 70%;
-    height: 350px;
-    background-image: url("../image/bgchef.jpg");
-    background-size: 50% 50%;
-    background-position: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("../image/veg.jpg");
+    background-position: left;
     background-repeat: no-repeat;
+}
+
+.tarea {
+    cursor: pointer;
+
+}
+
+.tarea:hover {
+    background-color: white;
+    border-color: #ffc107 !important;
+    transition: all .2s;
 }
 
 .tarea-contenedor {
@@ -97,9 +134,36 @@ body {
 }
 
 .tarea-titulo {
+    padding-top: 5px;
 
+}
+
+.tarea-descripcion {
+    grid-area: descripcion;
+    opacity: 0;
+    max-height: 0px;
+    transition: all 150ms;
 }
 
 .tarea-boton {
+    grid-area: buton;
     text-align: right;
+    font-size: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .lista-tareas {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+    }
+
+   .movil-mt-2 {
+       margin-top: 0.5rem !important;
+   }
+
+}
+
